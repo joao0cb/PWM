@@ -33,3 +33,24 @@ body {
   font-size: 30px;
   text-align: justify;
 }
+
+@media (max-width: 768px) {
+
+  .fundo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .foto {
+    width: 180px;
+  }
+
+  .nome {
+    font-size: 30px;
+  }
+
+  .bio {
+    font-size: 18px;
+  }
+
+}
