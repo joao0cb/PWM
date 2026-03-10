@@ -1,0 +1,15 @@
+.fundo {
+    background-color: #282828;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+    font-size: clamp(32px, 4vw, 55px);
+    color: white;
+}
+
+.fundo a {
+    color: white;
+}
