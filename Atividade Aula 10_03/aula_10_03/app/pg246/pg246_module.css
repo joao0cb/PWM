@@ -1,0 +1,20 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-decoration: underline;
+}
+
+main a {
+    text-decoration: none;
+    color: white;
+}
