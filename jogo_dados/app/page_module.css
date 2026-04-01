@@ -1,0 +1,254 @@
+/* RESET */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg,#2b1055,#7597de);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+
+/* CONTAINER */
+
+.container{
+  width:100%;
+  max-width:900px;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(8px);
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+
+/* HEADER */
+
+.header{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.titulo{
+  font-size:2rem;
+  margin-bottom:8px;
+}
+
+.rodada{
+  font-size:1rem;
+  opacity:0.8;
+}
+
+
+/* PLACAR */
+
+.placarGeral{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:30px;
+  gap:10px;
+}
+
+.placarItem{
+  flex:1;
+  background:rgba(255,255,255,0.1);
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.placarNumero{
+  display:block;
+  font-size:1.6rem;
+  font-weight:bold;
+  margin-top:5px;
+}
+
+.j1Cor{
+  color:#4ade80;
+}
+
+.j2Cor{
+  color:#60a5fa;
+}
+
+.empateCor{
+  color:#facc15;
+}
+
+
+/* AREA DOS JOGADORES */
+
+.jogadoresArea{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.vs{
+  font-size:2rem;
+  font-weight:bold;
+}
+
+
+/* CARD DO JOGADOR */
+
+.jogadorCard{
+  flex:1;
+  background:rgba(255,255,255,0.08);
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  transition:0.2s;
+}
+
+.jogadorCard.vencedor{
+  border:2px solid #4ade80;
+}
+
+.jogadorCard.perdedor{
+  border:2px solid #ef4444;
+}
+
+
+/* DADOS */
+
+.dados{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin:15px 0;
+}
+
+.dado-wrapper{
+  width:90px;
+  height:90px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.dado-img{
+  width:100%;
+  height:auto;
+}
+
+
+/* SOMA */
+
+.soma{
+  margin-bottom:10px;
+  font-size:1rem;
+}
+
+
+/* RESULTADO */
+
+.resultadoRodada{
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.resultadoRodada.ganhou{
+  color:#4ade80;
+}
+
+.resultadoRodada.perdeu{
+  color:#ef4444;
+}
+
+.resultadoRodada.empatou{
+  color:#facc15;
+}
+
+
+/* BOTÕES */
+
+button{
+  border:none;
+  padding:10px 16px;
+  border-radius:8px;
+  font-size:0.9rem;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+button:disabled{
+  opacity:0.5;
+  cursor:not-allowed;
+}
+
+.btnJogar{
+  background:#6366f1;
+  color:white;
+}
+
+.btnProxima{
+  background:#22c55e;
+  color:white;
+}
+
+.btnReiniciar{
+  background:#f43f5e;
+  color:white;
+}
+
+
+/* AÇÕES */
+
+.acoesRodada{
+  margin-top:20px;
+  width:100%;
+  text-align:center;
+}
+
+
+/* TELA FINAL */
+
+.telaFinal{
+  margin-top:20px;
+  background:rgba(255,255,255,0.08);
+  padding:20px;
+  border-radius:12px;
+}
+
+.resultadoFinal{
+  font-size:1.3rem;
+  margin-bottom:10px;
+}
+
+.placarFinal{
+  margin-bottom:15px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width:700px){
+
+  .jogadoresArea{
+    flex-direction:column;
+  }
+
+  .vs{
+    display:none;
+  }
+
+  .placarGeral{
+    flex-direction:column;
+  }
+
+}
