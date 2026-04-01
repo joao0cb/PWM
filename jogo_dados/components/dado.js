@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-// Props: recebe apenas o valor do dado (1-6)
 export default function Dado({ valor }) {
   return (
     <div className="dado-wrapper">
